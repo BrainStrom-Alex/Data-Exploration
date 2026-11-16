@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyM4zaP1XqZJV6riDQFd7WJV",
+      "authorship_tag": "ABX9TyMabIgH4U2vTEyRoda/iqlJ",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -1835,52 +1835,46 @@
     {
       "cell_type": "code",
       "source": [
-        "clean_df[\"Starting Median Salary\"][49]"
+        "print(clean_df[\"Starting Median Salary\"][49])"
       ],
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "ESGVVIDTEHkY",
-        "outputId": "01de50e7-3617-4d10-ecb3-e6750a8a839c"
+        "outputId": "e58d2098-fb93-4b1a-8483-424da64c81e7"
       },
-      "execution_count": 28,
+      "execution_count": 32,
       "outputs": [
         {
-          "output_type": "execute_result",
-          "data": {
-            "text/plain": [
-              "np.float64(34000.0)"
-            ]
-          },
-          "metadata": {},
-          "execution_count": 28
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "34000.0\n"
+          ]
         }
       ]
     },
     {
       "cell_type": "code",
       "source": [
-        "clean_df[\"Mid-Career Median Salary\"].idxmin()"
+        "print(clean_df[\"Mid-Career Median Salary\"].idxmin())"
       ],
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "wtHEb3khEUoh",
-        "outputId": "b90d5acf-664d-4ed2-e2f6-bf9cbf0927e7"
+        "outputId": "c29114dc-581f-4f0e-e994-483c2a77e324"
       },
-      "execution_count": 29,
+      "execution_count": 33,
       "outputs": [
         {
-          "output_type": "execute_result",
-          "data": {
-            "text/plain": [
-              "np.int64(18)"
-            ]
-          },
-          "metadata": {},
-          "execution_count": 29
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "18\n"
+          ]
         }
       ]
     },
