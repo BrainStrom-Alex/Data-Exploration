@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyN2MkqtyWw1fpseCDxzhd4H",
+      "authorship_tag": "ABX9TyMctGTYgGOIbZYnpz2Ev6CG",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -2629,6 +2629,35 @@
           },
           "metadata": {},
           "execution_count": 27
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "high = clean_df.short_values(\"Mid-Career 90th Percentile Salary\", ascending=False)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 277
+        },
+        "id": "7vkn7eywA29u",
+        "outputId": "a200f689-3ea3-4b53-cc61-d064d6558243"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "AttributeError",
+          "evalue": "'DataFrame' object has no attribute 'short_values'",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_512/3431130114.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mhigh\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mclean_df\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mshort_values\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Mid-Career 90th Percentile Salary\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mascending\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mFalse\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;32m/usr/local/lib/python3.13/dist-packages/pandas/core/generic.py\u001b[0m in \u001b[0;36m__getattr__\u001b[0;34m(self, name)\u001b[0m\n\u001b[1;32m   6297\u001b[0m         ):\n\u001b[1;32m   6298\u001b[0m             \u001b[0;32mreturn\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mname\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 6299\u001b[0;31m         \u001b[0;32mreturn\u001b[0m \u001b[0mobject\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m__getattribute__\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mname\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   6300\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   6301\u001b[0m     \u001b[0;34m@\u001b[0m\u001b[0mfinal\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mAttributeError\u001b[0m: 'DataFrame' object has no attribute 'short_values'"
+          ]
         }
       ]
     }
